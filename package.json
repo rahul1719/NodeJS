@@ -1,0 +1,45 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app:* nodemon app.js",
+    "lint": "eslint app.js --fix"
+  },
+  "dependencies": {
+    "arraylist": "^0.1.0",
+    "body-parser": "^1.17.1",
+    "botstrap": "^0.20.1",
+    "chalk": "2.4.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "jquery": "^3.3.1",
+    "morgan": "^1.9.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.3",
+    "pug": "^2.0.0-beta11"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": "4000"
+    }
+  }
+}
